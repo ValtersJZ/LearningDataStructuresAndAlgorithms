@@ -1,5 +1,8 @@
 def bubble_sort(ls):
-    """Bubble sort the simplest sorting algorithm"""
+    """
+    Bubble sort the simplest sorting algorith.
+    Time:O(n^2); Auxiliary space: O(1)
+    """
     size = len(ls)
 
     while size > 1:
