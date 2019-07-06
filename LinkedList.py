@@ -1,10 +1,15 @@
+"""Data Structures:LinkedList practice implemenation"""
+
 class Node(object):
+    """Node to be used in LinkedList data structure"""
     def __init__(self, value):
         self.value = value
         self.next = None
 
 
 class LinkedList(object):
+    """Linked list data structure
+    |Head[]|->[]->...->[]->None"""
     def __init__(self, head=None):
         self.head = head
 
