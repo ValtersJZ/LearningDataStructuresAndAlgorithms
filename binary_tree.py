@@ -29,14 +29,10 @@ class BinaryTree(object):
         return False
 
     def preorder_print(self, start, traversal):
-        traversal += "{}-".format(start.value)
-
-        # If there is a left branch
-        if start.left:
+        if start:
+            traversal += "{}-".format(start.value)
             traversal = self.preorder_print(start.left, traversal)
-        if start.right:
             traversal = self.preorder_print(start.right, traversal)
-
         return traversal
 
 if __name__ == '__main__':
